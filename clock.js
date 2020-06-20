@@ -10,10 +10,10 @@ function clock(){
     var s = new Date().getSeconds();
 
     /* am/pm section */
-    var ampm = "AM"
+    var am = "AM"
     if(h>12){
         h = h-12;
-        var ampm = "PM";
+        var am = "PM";
     }
     
     /* section which adds a zero before each single digits */
@@ -24,7 +24,7 @@ function clock(){
     hours.innerHTML = h;
     minutes.innerHTML = m;
     seconds.innerHTML = s;
-    ampm.innerHTML = ampm;
+    ampm.innerHTML = am;
 
 }
 var interval = setInterval(clock, 1000);
